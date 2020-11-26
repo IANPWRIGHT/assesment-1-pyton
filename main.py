@@ -1,9 +1,17 @@
-arm = int(input("Enter mumber of Armchair(s) you would like to order :"))
-print(arm)
-
+arm = int(input("Enter number of Armchair(s) you would like to order :"))
+while arm <1:
+  print ("a minimum order of 1 armchar is required")
+  arm = int(input("Enter number of Armchair(s) you would like to order :"))
+while arm >5:
+  print ("a maximum of 5 armchaires orderdat a time")
+  arm = int(input("Enter number of Armchair(s) you would like to order :"))
 
 sof = int(input("Enter mumber of sofa(s) you would like to order:"))
-print(sof)
+while sof >3:
+  print ("a maximum of 3 sofas orderd at a time")
+  arm = int(input("Enter number of sofa(s) you would like to order :"))
+
+
 
 print("costs")
 print("")
