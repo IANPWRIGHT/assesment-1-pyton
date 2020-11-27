@@ -21,8 +21,12 @@ while arm >5:
   print ("a maximum of 5 armchairs per order")
   arm = int(input("Enter number of Armchair(s) you would like to order :"))
 
-#asks the user for the number of sofas and validates that less than 4
+#asks the user for the number of sofas and validates that less than 4 
+#and 0 or more 
 sof = int(input("Enter number of sofa(s) you would like to order:"))
+while sof <0: 
+  print ("You can't order negative amount of sofas ") 
+  sof = int(input("Enter number of sofa(s) you would like to order :")) 
 while sof >3:
   print ("a maximum of 3 sofas ordered at a time")
   arm = int(input("Enter number of sofa(s) you would like to order :"))
